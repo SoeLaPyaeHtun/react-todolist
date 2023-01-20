@@ -1,3 +1,19 @@
 {
-  "todolist": []
+  "todolist": [
+    {
+      "id": "f55676b6-91e8-75b4-de10-1f3e1a4af303",
+      "task": "to read",
+      "complete": false
+    },
+    {
+      "id": "db2a45f4-d5df-c805-2a48-c70360800ea2",
+      "task": "todo",
+      "complete": false
+    },
+    {
+      "id": "6db8a6e2-cc0d-2040-032b-dbeee9e70426",
+      "task": "hello",
+      "complete": false
+    }
+  ]
 }
