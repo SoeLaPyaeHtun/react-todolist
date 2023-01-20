@@ -59,20 +59,19 @@ function App() {
   }
 
 
-  const completeTask = async (id, eComplete) => {
-    const res = await api.put(`/todolist/${id}`, {
-      eComplete
+  const completeTask = async (id, complete) => {
+    const res = await api.patch(`/todolist/${id}`, {
+      complete
     })
 
     setTasks(tasks.map(task => {
       if(task.id == id){
         return{
           id: task.id,
-          task : task.task,
-          complete: eComplete
+          task : task.task, 
+          complete: !task.complete
         }
       }
-
       return task
     }))
 
